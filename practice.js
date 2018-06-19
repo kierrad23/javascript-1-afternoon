@@ -41,11 +41,11 @@ var groceries = ['apples', 'milk','eggs', 'bread']
 function doubleCheck(arr){
   var score = 0;
   for(x in arr){
-    if(arr[x]!== 'chocolate'){
+    if(arr[x] === 'chocolate'){
       score++
     }
   }
-  if (score !== 0){
+  if (score === 0){
      arr.push('chocolate')
   }
   return arr
